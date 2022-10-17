@@ -217,6 +217,7 @@ TEST(Coin, DeriveAddress) {
             EXPECT_EQ(address, "QdtLm8ccxhuJFF5zCgikpaghbM3thdaGsW");
             break;
         case TWCoinTypeRavencoin:
+        case TWCoinTypeAvian:
             EXPECT_EQ(address, "RSZYjMDCP4q3t7NAFXPPnqEGrMZn971pdB");
             break;
         case TWCoinTypeRonin:
