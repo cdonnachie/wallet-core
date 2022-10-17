@@ -14,18 +14,18 @@
 
 
 TEST(TWAvianCoinType, TWCoinType) {
-    auto symbol = WRAPS(TWCoinTypeConfigurationGetSymbol(TWCoinTypeRavencoin));
+    auto symbol = WRAPS(TWCoinTypeConfigurationGetSymbol(TWCoinTypeAvian));
     auto txId = WRAPS(TWStringCreateWithUTF8Bytes("t123"));
-    auto txUrl = WRAPS(TWCoinTypeConfigurationGetTransactionURL(TWCoinTypeRavencoin, txId.get()));
+    auto txUrl = WRAPS(TWCoinTypeConfigurationGetTransactionURL(TWCoinTypeAvian, txId.get()));
     auto accId = WRAPS(TWStringCreateWithUTF8Bytes("a12"));
-    auto accUrl = WRAPS(TWCoinTypeConfigurationGetAccountURL(TWCoinTypeRavencoin, accId.get()));
-    auto id = WRAPS(TWCoinTypeConfigurationGetID(TWCoinTypeRavencoin));
-    auto name = WRAPS(TWCoinTypeConfigurationGetName(TWCoinTypeRavencoin));
+    auto accUrl = WRAPS(TWCoinTypeConfigurationGetAccountURL(TWCoinTypeAvian, accId.get()));
+    auto id = WRAPS(TWCoinTypeConfigurationGetID(TWCoinTypeAvian));
+    auto name = WRAPS(TWCoinTypeConfigurationGetName(TWCoinTypeAvian));
 
-    ASSERT_EQ(TWCoinTypeConfigurationGetDecimals(TWCoinTypeRavencoin), 8);
-    ASSERT_EQ(TWBlockchainBitcoin, TWCoinTypeBlockchain(TWCoinTypeRavencoin));
-    ASSERT_EQ(0x7a, TWCoinTypeP2shPrefix(TWCoinTypeRavencoin));
-    ASSERT_EQ(0x0, TWCoinTypeStaticPrefix(TWCoinTypeRavencoin));
+    ASSERT_EQ(TWCoinTypeConfigurationGetDecimals(TWCoinTypeAvian), 8);
+    ASSERT_EQ(TWBlockchainBitcoin, TWCoinTypeBlockchain(TWCoinTypeAvian));
+    ASSERT_EQ(0x7a, TWCoinTypeP2shPrefix(TWCoinTypeAvian));
+    ASSERT_EQ(0x0, TWCoinTypeStaticPrefix(TWCoinTypeAvian));
     assertStringsEqual(symbol, "AVN");
     assertStringsEqual(txUrl, "https://explorer.avn.network/tx/t123");
     assertStringsEqual(accUrl, "https://explorer.avn.network/address/a12");

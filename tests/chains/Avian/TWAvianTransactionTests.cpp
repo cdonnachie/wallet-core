@@ -19,7 +19,7 @@
 
 namespace TW::Bitcoin {
 
-TEST(, SignTransaction) {
+TEST(AvianTransaction, SignTransaction) {
     /*
         https://iancoleman.io/bip39/
         Mnemonic - wink van interest where camera lens divert moon alter gentle what predict
