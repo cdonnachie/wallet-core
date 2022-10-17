@@ -21,6 +21,7 @@ inline enum TWBitcoinSigHashType hashTypeForCoin(enum TWCoinType coinType) {
     switch (coinType) {
         case TWCoinTypeBitcoinCash:
         case TWCoinTypeECash:
+        case TWCoinTypeAvian:
             return (TWBitcoinSigHashType)((uint32_t)TWBitcoinSigHashTypeAll | (uint32_t)TWBitcoinSigHashTypeFork);
         case TWCoinTypeBitcoinGold:
             return (TWBitcoinSigHashType)((uint32_t)TWBitcoinSigHashTypeAll | (uint32_t)TWBitcoinSigHashTypeForkBTG);

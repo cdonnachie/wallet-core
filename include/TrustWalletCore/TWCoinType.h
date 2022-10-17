@@ -73,6 +73,7 @@ enum TWCoinType {
     TWCoinTypeZilliqa = 313,
     TWCoinTypeZelcash = 19167,
     TWCoinTypeRavencoin = 175,
+    TWCoinTypeAvian = 921,
     TWCoinTypeWaves = 5741564,
     TWCoinTypeTerra = 330, // see also TerraV2
     TWCoinTypeTerraV2 = 10000330, // see also Terra

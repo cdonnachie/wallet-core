@@ -34,6 +34,7 @@ bool Entry::validateAddress(TWCoinType coin, const std::string& address, byte p2
     case TWCoinTypeDash:
     case TWCoinTypeDogecoin:
     case TWCoinTypeRavencoin:
+    case TWCoinTypeAvian:
     case TWCoinTypeFiro:
     default:
         return Address::isValid(address, {{p2pkh}, {p2sh}});

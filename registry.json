@@ -706,6 +706,38 @@
     }
   },
   {
+    "id": "avian",
+    "name": "Avian",
+    "coinId": 921,
+    "symbol": "AVN",
+    "decimals": 8,
+    "blockchain": "Bitcoin",
+    "derivation": [
+      {
+        "path": "m/44'/921'/0'/0/0",
+        "xpub": "xpub",
+        "xprv": "xprv"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1",
+    "p2pkhPrefix": 60,
+    "p2shPrefix": 122,
+    "publicKeyHasher": "sha256ripemd",
+    "base58Hasher": "sha256d",
+    "explorer": {
+      "url": "https://explorer.avn.network",
+      "txPath": "/tx/",
+      "accountPath": "/address/"
+    },
+    "info": {
+      "url": "https://avn.network",
+      "source": "https://github.com/trezor/blockbook",
+      "rpc": "",
+      "documentation": "https://github.com/trezor/blockbook/blob/master/docs/api.md"
+    }
+  },
+  {
     "id": "poa",
     "name": "POA Network",
     "coinId": 178,
