@@ -189,6 +189,41 @@ class BitcoinAddressTests: XCTestCase {
                       "'\(addressString2)' should be an invalid Ravencoin address")
     }
 
+    func testValidAvianAddress() {
+        let addressString = "RFMdKw9vWPcfpZSUW87mwKP62TUZeF7uwQ"
+
+        XCTAssertEqual(CoinType.avian.p2pkhPrefix, BitcoinAddress(string: addressString)?.prefix)
+        XCTAssertTrue(BitcoinAddress.isValidString(string: addressString),
+                      "'\(addressString)' should be a valid Avian address")
+
+        let addressString2 = "rKHGzAWPyZRzkRYGdzywLgXNZfKrTuRuhN"
+
+        XCTAssertEqual(CoinType.avian.p2shPrefix, BitcoinAddress(string: addressString2)?.prefix)
+        XCTAssertTrue(BitcoinAddress.isValidString(string: addressString2),
+                      "'\(addressString2)' should be a valid Avian address")
+
+        // testnet address
+        let addressString3 = "mkYGZTZPEw9CeNzmk3YYchshKp2vH63qKc"
+
+        XCTAssertTrue(BitcoinAddress.isValidString(string: addressString3),
+                       "'\(addressString3)' should be a valid Avian testnet address")
+    }
+
+    func testInvalidAvianAddress() {
+        // bad address
+        let addressString = "XFMdKw9vWPcfpZSUW87mwKP62TUZeF7uwQ"
+
+        XCTAssertNil(BitcoinAddress(string: addressString)?.prefix)
+        XCTAssertFalse(BitcoinAddress.isValidString(string: addressString),
+                      "'\(addressString)' should be an invalid Avian address")
+
+        // testnet address
+        let addressString2 = "mkYGZTZPEw9CeNzmk3YYchshKp2vH63qKc"
+
+        XCTAssertFalse(CoinType.avian.validate(address: addressString2),
+                      "'\(addressString2)' should be an invalid Avian address")
+    }
+
     func testValidMonacoinAddress() {
         let addressString = "MVELZC3ks1Xk59kvKWuSN3mpByNwaxeaBJ"
 

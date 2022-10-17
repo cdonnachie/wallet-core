@@ -79,6 +79,7 @@ class CoinAddressDerivationTests {
         ZILLIQA -> assertEquals("zil1mk6pqphhkmaguhalq6n3cq0h38ltcehg0rfmv6", address)
         ZELCASH -> assertEquals("t1UKbRPzL4WN8Rs8aZ8RNiWoD2ftCMHKGUf", address)
         RAVENCOIN -> assertEquals("RHoCwPc2FCQqwToYnSiAb3SrCET4zEHsbS", address)
+        AVIAN -> assertEquals("RWurtg29b7RBoPkxch54arsSyg1K5vkdqm", address)
         WAVES -> assertEquals("3P63vkaHhyE9pPv9EfsjwGKqmZYcCRHys4n", address)
         AETERNITY -> assertEquals("ak_QDHJSfvHG9sDHBobaWt2TAGhuhipYjEqZEH34bWugpJfJc3GN", address)
         TERRA, TERRAV2 -> assertEquals("terra1rh402g98t7sly8trzqw5cyracntlep6qe3smug", address)

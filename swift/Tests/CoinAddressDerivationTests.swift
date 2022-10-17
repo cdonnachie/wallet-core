@@ -175,7 +175,7 @@ class CoinAddressDerivationTests: XCTestCase {
                     let expectedResult = "RHoCwPc2FCQqwToYnSiAb3SrCET4zEHsbS"
                     assertCoinDerivation(coin, expectedResult, derivedAddress, address)
                 case .avian:
-                    let expectedResult = "RHoCwPc2FCQqwToYnSiAb3SrCET4zEHsbS"
+                    let expectedResult = "RWurtg29b7RBoPkxch54arsSyg1K5vkdqm"
                     assertCoinDerivation(coin, expectedResult, derivedAddress, address)
                 case .solana:
                     let expectedResult = "2bUBiBNZyD29gP1oV6de7nxowMLoDBtopMMTGgMvjG5m"

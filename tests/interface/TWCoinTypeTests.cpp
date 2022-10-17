@@ -64,6 +64,7 @@ TEST(TWCoinType, TWPurpose) {
     ASSERT_EQ(TWPurposeBIP44, TWCoinTypePurpose(TWCoinTypeFiro));
     ASSERT_EQ(TWPurposeBIP44, TWCoinTypePurpose(TWCoinTypeZelcash));
     ASSERT_EQ(TWPurposeBIP44, TWCoinTypePurpose(TWCoinTypeRavencoin));
+    ASSERT_EQ(TWPurposeBIP44, TWCoinTypePurpose(TWCoinTypeAvian));
     ASSERT_EQ(TWPurposeBIP44, TWCoinTypePurpose(TWCoinTypeWaves));
     ASSERT_EQ(TWPurposeBIP44, TWCoinTypePurpose(TWCoinTypeNEO));
 }
@@ -136,6 +137,7 @@ TEST(TWCoinType, TWPublicKeyType) {
     ASSERT_EQ(TWPublicKeyTypeSECP256k1, TWCoinTypePublicKeyType(TWCoinTypeFiro));
     ASSERT_EQ(TWPublicKeyTypeSECP256k1, TWCoinTypePublicKeyType(TWCoinTypeZelcash));
     ASSERT_EQ(TWPublicKeyTypeSECP256k1, TWCoinTypePublicKeyType(TWCoinTypeRavencoin));
+    ASSERT_EQ(TWPublicKeyTypeSECP256k1, TWCoinTypePublicKeyType(TWCoinTypeAvian));
     ASSERT_EQ(TWPublicKeyTypeCURVE25519, TWCoinTypePublicKeyType(TWCoinTypeWaves));
     ASSERT_EQ(TWPublicKeyTypeNIST256p1, TWCoinTypePublicKeyType(TWCoinTypeNEO));
 }

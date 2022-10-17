@@ -228,6 +228,12 @@ TEST(Coin, validateAddressRavencoin) {
     EXPECT_FALSE(validateAddress(TWCoinTypeRavencoin, "mwJAu1BWcRSQhepZ71wiGoSwsD6hnB5B7G"));
 }
 
+TEST(Coin, validateAddressAvian) {
+    EXPECT_TRUE(validateAddress(TWCoinTypeAvian, "RHoCwPc2FCQqwToYnSiAb3SrCET4zEHsbS"));
+    // bad address
+    EXPECT_FALSE(validateAddress(TWCoinTypeAvian, "XHoCwPc2FCQqwToYnSiAb3SrCET4zEHsbS"));
+}
+
 TEST(Coin, ValidateAddressWaves) {
     EXPECT_TRUE(validateAddress(TWCoinTypeWaves, "3P7WTh6kLKa8pAY4ynrSHm8TN8PVrdR7M1Q"));
     EXPECT_FALSE(validateAddress(TWCoinTypeWaves, "3P7WTh6kLKa8pAY4ynrSHm8TN8PVrdR7M1q"));
